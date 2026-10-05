@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <!-- Настройка области просмотра для адаптивности -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Собрать ланч – Food Construct</title>
+
+    <!-- Подключение Google-шрифта Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Подключение основного и дополнительного CSS-файлов -->
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/build-lunch.css">
+</head>
+
+<body>
+    <header>
+        <h1>Food Construct</h1>
+        <nav>
+            <!-- Перекрёстная ссылка на главную страницу -->
+            <a href="index.html">О нас</a>
+            <!-- Идентификатор active для выделения текущей страницы -->
+            <a href="build-lunch.html" id="active">Собрать ланч</a>
+            <a href="#">Заказы</a>
+            <a href="#contacts">Контакты</a>
+        </nav>
+    </header>
+
+    <main> 
+        <!-- Блок с супами -->
+        <section>
+            <h2>Выберите суп</h2>
+            <!-- Сетка с блюдами -->
+            <div class="dishes-grid">
+                <!-- Карточка отд. блюда -->
+                <div class="dish-card">
+                    <img src="images/soups/gaspacho.jpg" alt="Гаспачо">
+                    <p class="dish-price">210₽</p>
+                    <p class="dish-name">Гаспачо</p>
+                    <p class="dish-weight">350 г</p>
+                    <button class="add-button">Добавить</button>
+                </div>
+                <div class="dish-card">
+                    <img src="images/soups/pumpkin-soup.jpg" alt="Тыквенный крем-суп">
+                    <p class="dish-price">215₽</p>
+                    <p class="dish-name">Тыквенный крем-суп</p>
+                    <p class="dish-weight">330 г</p>
+                    <button class="add-button">Добавить</button>
+                </div>
+                <div class="dish-card">
+                    <img src="images/soups/norwegian-borsch.jpg" alt="Норвежский Борщ">
+                    <p class="dish-price">270₽</p>
+                    <p class="dish-name">Норвежский Борщ</p>
+                    <p class="dish-weight">270 г</p>
+                    <button class="add-button">Добавить</button>
+                </div>
+            </div>
+        </section>
+
+    <!-- Блок с главными блюдами -->
+        <section>
+            <h2>Выберите главное блюдо</h2>
+            <div class="dishes-grid">
+                <div class="dish-card">
+                    <img src="images/main-dishes/potato-with-mushrooms.jpg" alt="Жареная картошка с грибами">
+                    <p class="dish-price">150₽</p>
+                    <p class="dish-name">Жареная картошка с грибами</p>
+                    <p class="dish-weight">250 г</p>
+                    <button class="add-button">Добавить</button>
+                </div>
+                <div class="dish-card">
+                    <img src="images/main-dishes/lasagna.jpg" alt="Лазанья">
+                    <p class="dish-price">385₽</p>
+                    <p class="dish-name">Лазанья</p>
+                    <p class="dish-weight">310 г</p>
+                    <button class="add-button">Добавить</button>
+                </div>
+                <div class="dish-card">
+                    <img src="images/main-dishes/navy-style-pasta.jpg" alt="Макароны по-флотски">
+                    <p class="dish-price">225₽</p>
+                    <p class="dish-name">Макароны по-флотски</p>
+                    <p class="dish-weight">280 г</p>
+                    <button class="add-button">Добавить</button>
+                </div>
+            </div>
+        </section>
+
+    <!-- Блок с напитками -->
+        <section>
+            <h2>Выберите напиток</h2>
+            <div class="dishes-grid">
+                <div class="dish-card">
+                    <img src="images/drinkables/orange-juice.jpg" alt="Апельсиновый сок">
+                    <p class="dish-price">120₽</p>
+                    <p class="dish-name">Апельсиновый сок</p>
+                    <p class="dish-weight">300 мл</p>
+                    <button class="add-button">Добавить</button>
+                </div>
+                <div class="dish-card">
+                    <img src="images/drinkables/apple-juice.jpg" alt="Яблочный сок">
+                    <p class="dish-price">90₽</p>
+                    <p class="dish-name">Яблочный сок</p>
+                    <p class="dish-weight">300 мл</p>
+                    <button class="add-button">Добавить</button>
+                </div>
+                <div class="dish-card">
+                    <img src="images/drinkables/carrot-juice.jpg" alt="Морковный сок">
+                    <p class="dish-price">110₽</p>
+                    <p class="dish-name">Морковный сок</p>
+                    <p class="dish-weight">300 мл</p>
+                    <button class="add-button">Добавить</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contacts">
+        <p>Телефон: <a href="tel:+79997775667">+7 (999) 777-56-67</a></p>
+        <p>Email: <a href="mailto:foodconstruct@info.ru">foodconstruct@info.ru</a></p>
+    </footer>
+</body>
+</html>

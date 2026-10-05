@@ -1,0 +1,207 @@
+/* база */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* шапка */
+header {
+    padding: 40px 70px; 
+}
+
+header h1 {
+    font-size: 42px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 30px;
+}
+
+/* навигационный блок */
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: #000;
+    font-weight: 400;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ff6b4a;
+}
+
+/* Активная ссылка */
+#active {
+    color: tomato;
+}
+
+/* основное */
+main {
+    padding: 0 70px; 
+    margin-bottom: 60px;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+section h2 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+
+/* картинки */
+.main-img {
+    width: 100%;
+    max-width: 1000px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+/* текст */
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* списки */
+ul {
+    margin-left: 20px;
+}
+
+ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+/* таблица */
+table {
+    width: 100%;
+    max-width: 900px;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #000;
+    padding: 15px;
+    text-align: center;
+}
+
+thead th {
+    background-color: #f5f5f5;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+td:first-child {
+    width: 50px;
+    font-weight: 700;
+}
+
+/*  footer  */
+footer {
+    background-color: black;
+    color: white;
+    padding: 30px 70px;
+    text-align: left;
+    width: 100%;
+}
+
+footer p {
+    font-size: 18px;
+    margin: 0;
+    color: white;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+footer a:hover {
+    color: #ff6b4a;
+}
+
+
+/* Адаптивность главной страницы */
+/* ≤800px */
+@media (max-width: 800px) {
+    img {
+        width: 500px;
+        max-width: 100%;
+    }
+    
+    nav {
+        justify-content: space-between;
+    }
+}
+
+/* ≤600px */
+@media (max-width: 600px) {
+    header h1 {
+        text-align: center;
+    }
+    
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav a {
+        font-size: 24px;
+    }
+    
+    img {
+        width: 100%;
+    }
+    
+    table {
+        font-size: 14px;
+    }
+    
+    th, td {
+        padding: 10px;
+    }
+}
+
+/* ≤400px */
+@media (max-width: 400px) {
+    table {
+        font-size: 12px;
+    }
+    
+    th, td {
+        padding: 8px;
+    }
+    
+    header, main, footer {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
